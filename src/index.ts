@@ -10,6 +10,8 @@ import { buscarEstudante } from "./endpoints/Estudantes/buscarEstudante";
 import { criarEstudante } from "./endpoints/Estudantes/criarEstudante";
 import { mudarEstudanteTurma } from "./endpoints/Estudantes/mudarEstudanteTurma";
 
+
+
 app.post("/docentes", criarDocente)
 
 app.get("/docentes", pegarDocentes)
