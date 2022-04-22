@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { Docentes } from "../classes/Docentes";
-import { connection } from "../data/connection";
+import { Docentes } from "../../classes/Docentes";
+import { connection } from "../../data/connection";
 
 
 
