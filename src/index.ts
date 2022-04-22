@@ -6,7 +6,9 @@ import { mudarModuloTurma } from './endpoints/Turma/mudarModuloTurma'
 import { criarDocente } from "./endpoints/Docente/criarDocente";
 import { mudarDocenteTurma } from "./endpoints/Docente/mudarDocenteTurma";
 import { pegarDocentes } from "./endpoints/Docente/pegarDocentes";
-
+import { buscarEstudante } from "./endpoints/Estudantes/buscarEstudante";
+import { criarEstudante } from "./endpoints/Estudantes/criarEstudante";
+import { mudarEstudanteTurma } from "./endpoints/Estudantes/mudarEstudanteTurma";
 
 
 
@@ -23,3 +25,9 @@ app.get("/turmas/ativas", pegarTurmasAtivas)
 app.post("/turmas", criarTurma)
 
 app.put("/turmas/:id", mudarModuloTurma)
+
+app.post ("/estudantes",criarEstudante)
+
+app.get ("/estudantes/:nome",buscarEstudante)
+
+app.put ("/estudantes/:idDoEstudante",mudarEstudanteTurma)
