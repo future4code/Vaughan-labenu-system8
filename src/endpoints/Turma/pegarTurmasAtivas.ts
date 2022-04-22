@@ -1,8 +1,8 @@
-import { Turma } from '../classes/Turma'
+import { Turma } from '../../classes/Turma'
 import { Request, Response } from 'express'
-import { connection } from '../data/connection'
+import { connection } from '../../data/connection'
 
-export const buscarTurmasAtivas = async (req: Request, res: Response): Promise<void> => {
+export const pegarTurmasAtivas = async (req: Request, res: Response): Promise<void> => {
 
     try {
         const turmas = await connection("TURMA")

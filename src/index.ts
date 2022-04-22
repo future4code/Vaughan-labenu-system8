@@ -1,10 +1,23 @@
 import { app } from "./app"
-import {Turma} from "./classes/Turma"
-import {criarTurma} from "./endpoints/criarTurma"
-import {buscarTurmasAtivas} from "./endpoints/buscarTurmasAtivas"
+import { pegarTurmasAtivas } from "./endpoints/Turma/pegarTurmasAtivas"
+import { pegarTurmas } from "./endpoints/Turma/pegarTurmas"
+import { criarTurma } from "./endpoints/Turma/criarTurma"
+import { mudarModuloTurma } from './endpoints/Turma/mudarModuloTurma'
+import { criarDocente } from "./endpoints/criarDocente"
+import { mudarDocenteTurma } from "./endpoints/mudarDocenteTurma"
+import { pegarDocentes } from "./endpoints/pegarDocentes"
 
-app.get ("/turmas/ativas", buscarTurmasAtivas)
 
-app.post ("/turmas", criarTurma)
+app.post("/docentes", criarDocente)
 
-app.put ("/turmas", criarTurma)
+app.get("/docentes", pegarDocentes)
+
+app.put("/docentes", mudarDocenteTurma)
+
+app.get("/turmas", pegarTurmas)
+
+app.get("/turmas/ativas", pegarTurmasAtivas)
+
+app.post("/turmas", criarTurma)
+
+app.put("/turmas/:id", mudarModuloTurma)
