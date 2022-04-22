@@ -1,9 +1,9 @@
-import { Turma } from '../../classes/Turma'
 import { Request, Response } from 'express'
 import { connection } from '../../data/connection'
 
 export const mudarModuloTurma = async (req: Request, res: Response): Promise<void> => {
-    let errorCode = 500
+
+    let errorCode = 400
 
     try {
         const { modulo } = req.body
