@@ -6,6 +6,7 @@ export const buscarEstudante = async (req: Request, resp: Response):Promise<void
     try {
         const nome: string = req.params.nome
         const resultado = await connection("ESTUDANTE")
+        .where("nome", "like", `%${nome}%`)
 
         if(resultado.length === 0){
             errorCode = 404
