@@ -16,7 +16,8 @@ export const criarDocente = async(req: Request, res: Response): Promise<void> =>
 
         const docente: Docentes = new Docentes(id, nome, email, dataNasc, turma_id)
 
-        await connection("DOCENTE").insert({id, nome, email, data_nasc, turma_id})
+        await connection("DOCENTE")
+        .insert({id, nome, email, data_nasc, turma_id})
         
         res.status(201).send({message: "Docente criado!"})
     }catch(error: any) {
