@@ -3,9 +3,9 @@ import { pegarTurmasAtivas } from "./endpoints/Turma/pegarTurmasAtivas"
 import { pegarTurmas } from "./endpoints/Turma/pegarTurmas"
 import { criarTurma } from "./endpoints/Turma/criarTurma"
 import { mudarModuloTurma } from './endpoints/Turma/mudarModuloTurma'
-import { criarDocente } from "./endpoints/criarDocente"
-import { mudarDocenteTurma } from "./endpoints/mudarDocenteTurma"
-import { pegarDocentes } from "./endpoints/pegarDocentes"
+import { criarDocente } from "./endpoints/Docente/criarDocente";
+import { mudarDocenteTurma } from "./endpoints/Docente/mudarDocenteTurma";
+import { pegarDocentes } from "./endpoints/Docente/pegarDocentes";
 
 
 app.post("/docentes", criarDocente)
