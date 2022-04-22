@@ -8,7 +8,7 @@
 <br/>
 
 ## :link: Link da Documentação da API</h2>
- <a href="https://documenter.getpostman.com/view/19298430/UyrAFcZk">LabenuSystem</a>
+ <a href="https://documenter.getpostman.com/view/19301119/UyrAFcic">LabenuSystem</a>
 
 ## 🛠 Tecnologias e Ferramentas Utilizadas</h2>
 
