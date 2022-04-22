@@ -3,6 +3,7 @@ import { Request, Response } from 'express'
 import { connection } from '../../data/connection'
 
 export const pegarTurmasAtivas = async (req: Request, res: Response): Promise<void> => {
+    let errorCode = 400
 
     try {
         const turmas = await connection("TURMA")
