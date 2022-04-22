@@ -10,14 +10,7 @@ import { buscarEstudante } from "./endpoints/Estudantes/buscarEstudante";
 import { criarEstudante } from "./endpoints/Estudantes/criarEstudante";
 import { mudarEstudanteTurma } from "./endpoints/Estudantes/mudarEstudanteTurma";
 
-
-
-app.post("/docentes", criarDocente)
-
-app.get("/docentes", pegarDocentes)
-
-app.put("/docentes", mudarDocenteTurma)
-
+//TURMAS
 app.get("/turmas", pegarTurmas)
 
 app.get("/turmas/ativas", pegarTurmasAtivas)
@@ -26,8 +19,16 @@ app.post("/turmas", criarTurma)
 
 app.put("/turmas/:id", mudarModuloTurma)
 
-app.post ("/estudantes",criarEstudante)
+//DOCENTES
+app.post("/docentes", criarDocente)
 
+app.get("/docentes", pegarDocentes)
+
+app.put("/docentes", mudarDocenteTurma)
+
+//ESTUDANTES
 app.get ("/estudantes/:nome",buscarEstudante)
+
+app.post ("/estudantes",criarEstudante)
 
 app.put ("/estudantes/:idDoEstudante",mudarEstudanteTurma)
